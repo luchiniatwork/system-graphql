@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.clojars.luchiniatwork</groupId>
   <artifactId>system-lacinia</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <name>system-lacinia</name>
   <dependencies>
     <dependency>
@@ -19,7 +19,7 @@
     <dependency>
       <groupId>com.walmartlabs</groupId>
       <artifactId>lacinia-pedestal</artifactId>
-      <version>0.15.0</version>
+      <version>1.0</version>
     </dependency>
     <dependency>
       <groupId>hodur</groupId>
@@ -29,7 +29,7 @@
     <dependency>
       <groupId>com.walmartlabs</groupId>
       <artifactId>lacinia</artifactId>
-      <version>0.38.0</version>
+      <version>1.0</version>
     </dependency>
     <dependency>
       <groupId>hodur</groupId>
