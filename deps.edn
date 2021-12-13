@@ -8,8 +8,8 @@
   integrant/integrant                             {:mvn/version "0.8.0"}
 
   ;; Lacinia/Pedestal for GraphQL
-  com.walmartlabs/lacinia                         {:mvn/version "0.38.0"}
-  com.walmartlabs/lacinia-pedestal                {:mvn/version "0.15.0"}
+  com.walmartlabs/lacinia                         {:mvn/version "1.0"}
+  com.walmartlabs/lacinia-pedestal                {:mvn/version "1.0"}
 
   ;; Hodur for schema parsing
   hodur/engine                                    {:mvn/version "0.1.8"}

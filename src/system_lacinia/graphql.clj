@@ -127,10 +127,12 @@
 (defmethod ig/init-key ::compiled-schema [_ {:keys [sdl-schema resolvers entity-resolvers]}]
   (info {:msg "Initializing Compiled Lacinia Schema"
          :sdl-schema sdl-schema})
-  (-> sdl-schema
-      (lacinia-parser/parse-schema {:federation {:entity-resolvers entity-resolvers}})
-      (lacinia-util/inject-resolvers resolvers)
-      lacinia-schema/compile))
+  (let [federation-settings (when entity-resolvers
+                              {:federation {:entity-resolvers entity-resolvers}})]
+    (-> sdl-schema
+        (lacinia-parser/parse-schema federation-settings)
+        (lacinia-util/inject-resolvers resolvers)
+        lacinia-schema/compile)))
 
 
 (defmethod ig/init-key ::log-interceptor [_ _]
