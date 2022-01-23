@@ -2,36 +2,36 @@
 
  :deps
  {org.clojure/clojure                             {:mvn/version "1.10.3"}
-  org.clojure/core.async                          {:mvn/version "1.3.618"}
+  org.clojure/core.async                          {:mvn/version "1.5.648"}
 
   ;; dependency injection
   integrant/integrant                             {:mvn/version "0.8.0"}
 
   ;; Lacinia/Pedestal for GraphQL
-  com.walmartlabs/lacinia                         {:mvn/version "1.0"}
-  com.walmartlabs/lacinia-pedestal                {:mvn/version "1.0"}
+  com.walmartlabs/lacinia                         {:mvn/version "1.1"}
+  com.walmartlabs/lacinia-pedestal                {:mvn/version "1.1"}
 
   ;; Hodur for schema parsing
-  hodur/engine                                    {:mvn/version "0.1.8"}
-  hodur/lacinia-schema                            {:mvn/version "0.2.0"}
+  hodur/engine                                    {:mvn/version "0.1.9"}
+  hodur/lacinia-schema                            {:mvn/version "0.2.1"}
 
   ;; Logging
   com.taoensso/timbre                             {:mvn/version "5.1.2"}
 
   ;; Encryption/Hashing
-  buddy/buddy-hashers                             {:mvn/version "1.8.1"}
-  buddy/buddy-core                                {:mvn/version "1.9.0"}
+  buddy/buddy-hashers                             {:mvn/version "1.8.158"}
+  buddy/buddy-core                                {:mvn/version "1.10.413"}
 
   ;; Cross-dependency
-  net.clojars.luchiniatwork/system-utils          {:mvn/version "0.0.1"}}
+  net.clojars.luchiniatwork/system-utils          {:mvn/version "0.0.6"}}
 
  :aliases
  {:dev {:extra-paths ["dev"]
         :extra-deps
-        {integrant/repl                                 {:mvn/version "0.3.1"}}}
+        {integrant/repl                                 {:mvn/version "0.3.2"}}}
 
   :test {:extra-paths ["test"]
          :extra-deps
-         {lambdaisland/kaocha                           {:mvn/version "1.0.732"}}
+         {lambdaisland/kaocha                           {:mvn/version "1.60.977"}}
          :main-opts
          ["-m" "kaocha.runner"]}}}
