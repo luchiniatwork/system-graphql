@@ -1,4 +1,5 @@
 (ns system-lacinia.resolvers-util
+  (:refer-clojure :exclude [parse-uuid])
   (:import (java.text SimpleDateFormat)
            (java.util TimeZone
                       UUID)))
